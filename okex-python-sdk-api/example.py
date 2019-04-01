@@ -10,12 +10,12 @@ import json
 if __name__ == '__main__':
 
     api_key = ''
-    seceret_key = ''
+    secret_key = ''
     passphrase = ''
 
     # account api test
     # param use_server_time's value is False if is True will use server timestamp
-    # accountAPI = account.AccountAPI(api_key, seceret_key, passphrase, True)
+    # accountAPI = account.AccountAPI(api_key, secret_key, passphrase, True)
     # result = accountAPI.get_currencies()
     # result = accountAPI.get_wallet()
     # result = accountAPI.get_currency('btc')
@@ -31,7 +31,7 @@ if __name__ == '__main__':
     # result = accountAPI.get_top_up_record('BTC')
 
     # spot api test
-    spotAPI = spot.SpotAPI(api_key, seceret_key, passphrase, True)
+    spotAPI = spot.SpotAPI(api_key, secret_key, passphrase, True)
     # result = spotAPI.get_account_info()
     # result = spotAPI.get_coin_account_info('BTC')
     # result = spotAPI.get_ledger_record('BTC', limit=1)
@@ -60,7 +60,7 @@ if __name__ == '__main__':
     # result = spotAPI.get_kline('LTC-USDT', '2018-09-12T07:59:45.977Z', '2018-09-13T07:59:45.977Z', 60)
     #
     # future api test
-    futureAPI = future.FutureAPI(api_key, seceret_key, passphrase, True)
+    futureAPI = future.FutureAPI(api_key, secret_key, passphrase, True)
     # result = futureAPI.get_position()
     # result = futureAPI.get_coin_account('btc')
     # result = futureAPI.get_leverage('btc')
@@ -98,7 +98,7 @@ if __name__ == '__main__':
     # result = futureAPI.get_mark_price('BCH-USD-181019')
 
     # level api test
-    # levelAPI = lever.LeverAPI(api_key, seceret_key, passphrase, True)
+    # levelAPI = lever.LeverAPI(api_key, secret_key, passphrase, True)
     # result = levelAPI.get_account_info()
     # result = levelAPI.get_specific_account('btc-usdt')
     # result = levelAPI.get_ledger_record('btc-usdt', '1', '4', '2')
@@ -129,7 +129,7 @@ if __name__ == '__main__':
     # result = levelAPI.get_fills(2245642842378240, 'ltc-usdt', '', '', 100)
 
     # ett api test
-    ettAPI = ett.EttAPI(api_key, seceret_key, passphrase, True)
+    ettAPI = ett.EttAPI(api_key, secret_key, passphrase, True)
     # result = ettAPI.get_accounts()
     # result = ettAPI.take_order()
     # result = ettAPI.revoke_order()
@@ -141,7 +141,7 @@ if __name__ == '__main__':
     # result = ettAPI.get_define_price('ok06ett')
 
     # swap api test
-    # swapAPI = swap.SwapAPI(api_key, seceret_key, passphrase, True)
+    # swapAPI = swap.SwapAPI(api_key, secret_key, passphrase, True)
     # result = swapAPI.get_accounts()
     # result = swapAPI.get_position()
     # result = swapAPI.get_coin_account('BTC-USD-SWAP')
